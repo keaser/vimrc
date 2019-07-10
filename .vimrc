@@ -10,7 +10,7 @@ syntax on
 set number
 
 " obligatoire pour utiliser Vundle
-" filetype off
+filetype off
 
 " activation du retour à la ligne
 " set nowrap pour le désactiver
@@ -48,3 +48,15 @@ set noswapfile
 
 " Affiche un minimum de 5 lignes autour du curseur 
 set scrolloff=5
+
+" Indication du chemin de gestion de plugin
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" chargement des plugins Vundle doit être en premier
+Plugin 'VundleVim/Vundle.vim'
+
+" Tous les plugins doivent être définis avant cette ligne
+call vundle#end()
+filetype plugin indent on
+
