@@ -60,6 +60,19 @@ Plugin 'VundleVim/Vundle.vim'
 " l'éditeur. Il mettra en évidence les erreurs
 Plugin 'w0rp/ale'
 
+" Sert a fournir l'autocompletion dans vim
+" après l'installation du plugin avec la commande ":PluginInstall" dans vim
+" aller dans le dosser cd ~/.vim/bundle/YouCompleteMe  et lancer la commande
+" suivante :
+" ./install.py --clang-completer
+Plugin 'ycm-core/YouCompleteMe'
+
+"auto indentation pour Python conforme à la norme PEP8
+Plugin 'Vimjas/vim-python-pep8-indent'
+
+" sert à chercher des fichiers
+Plugin 'ctrlpvim/ctrlp.vim.git'  
+
 " Tous les plugins doivent être définis avant cette ligne
 call vundle#end()
 filetype plugin indent on
