@@ -50,6 +50,8 @@ set noswapfile
 set scrolloff=5
 
 " Indication du chemin de gestion de plugin
+" Creation de doosier ~/.vim/bundle/ mkdir -p ~/.vim/bundle/
+" Puis git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
