@@ -96,4 +96,4 @@ let b:ale_linters={'python':['pylint']}
 
 "executer python sur le fichier
 filetype on
-autocmd FileType python nnoremap <buffer> <F9> :exec '!clear; python' shelle    scape(@%, 1)<cr>
+autocmd FileType python nnoremap <buffer> <F9> :exec '!clear; python' shellescape(@%, 1)<cr>
