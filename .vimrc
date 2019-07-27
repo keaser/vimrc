@@ -75,6 +75,9 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 " sert à chercher des fichiers
 Plugin 'ctrlpvim/ctrlp.vim.git'  
 
+" color theme gruvbox
+Plugin 'morhetz/gruvbox'
+
 " Tous les plugins doivent être définis avant cette ligne
 call vundle#end()
 filetype plugin indent on
@@ -93,6 +96,11 @@ let g:ale_fixers={'python':['autopep8']}
 " Il faut installer pylint
 " pip3 install pylint
 let b:ale_linters={'python':['pylint']}
+
+" activer gruvbox
+let g:gruvbox_contrast_dark='dark'
+set background=dark
+colorscheme gruvbox
 
 "executer python sur le fichier
 filetype on
